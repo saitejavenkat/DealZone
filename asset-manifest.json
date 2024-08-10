@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DealZone/static/css/main.855dcf62.css",
-    "main.js": "/DealZone/static/js/main.ee867e78.js",
+    "main.js": "/DealZone/static/js/main.ca368cd9.js",
     "static/js/453.279766ea.chunk.js": "/DealZone/static/js/453.279766ea.chunk.js",
     "index.html": "/DealZone/index.html",
     "main.855dcf62.css.map": "/DealZone/static/css/main.855dcf62.css.map",
-    "main.ee867e78.js.map": "/DealZone/static/js/main.ee867e78.js.map",
+    "main.ca368cd9.js.map": "/DealZone/static/js/main.ca368cd9.js.map",
     "453.279766ea.chunk.js.map": "/DealZone/static/js/453.279766ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.855dcf62.css",
-    "static/js/main.ee867e78.js"
+    "static/js/main.ca368cd9.js"
   ]
 }
