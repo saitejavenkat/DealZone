@@ -1,0 +1,426 @@
+.Name {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-style: italic;
+  font-size: xxx-large;
+  color: rgb(255, 66, 129);
+  margin-left: 5%;
+}
+.container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.container .filter {
+  width: 300px;
+  min-height: 350px;
+  align-self: flex-start;
+  margin-left: 10px;
+  position: sticky;
+  top: 160px;
+  margin-top: 60px;
+}
+.colors{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.filter-name {
+  color: rgb(0, 119, 255);
+}
+.close {
+  margin: 0px 8px 0px 4px;
+  cursor: pointer;
+}
+
+.filters {
+  width: 100%;
+  min-height: 5px;
+  padding: 2px;
+  font-weight: bolder;
+}
+
+.filter .forms .cost-scroll input {
+  width: 90%;
+}
+.filter .hg {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.forms div {
+  color: rgb(0, 119, 255);
+  font-weight: bold;
+  margin-top: 10px;
+}
+.filter .forms form {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+.filter .forms input {
+  width: 40px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.products {
+  width: 100%;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 310px 310px 310px 310px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.products > div {
+  width: 290px;
+  height: 400px;
+  position: relative;
+  box-shadow: 5px 5px 20px rgb(201, 201, 201);
+  margin-bottom: 20px;
+}
+
+.products div img {
+  width: 100%;
+  height: 75%;
+  position: absolute;
+}
+.products div span {
+  width: 100%;
+  top: 77%;
+  display: inline-block;
+  text-align: center;
+  color: rgb(255, 0, 85);
+  font-weight: bold;
+  position: absolute;
+}
+
+.products div span ~ span {
+  top: 84%;
+  color: #cc00ff;
+  position: absolute;
+}
+.products div a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.products > div:hover {
+  width: 295px;
+  height: 405px;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgb(124, 124, 124);
+}
+@keyframes color-change {
+  0% {
+    color: rgb(0, 183, 255);
+    font-size: 13px;
+  }
+  25% {
+    color: rgb(0, 255, 13);
+  }
+  50% {
+    color: rgb(0, 195, 255);
+    font-size: 14px;
+  }
+  75% {
+    color: rgb(229, 255, 0);
+  }
+}
+.products div span ~ span sup {
+  animation-name: color-change;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  left: 55px;
+  font-style: italic;
+  top: 1px;
+}
+
+.items {
+  grid-template-columns: 300px 300px 300px;
+}
+
+.items div {
+  height: 450px;
+  width: 280px;
+  margin-bottom: 25px;
+}
+
+.items div img {
+  height: 75%;
+}
+
+.items > div:hover {
+  height: 455px;
+  width: 285px;
+}
+
+.items div .name {
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.items div .names {
+  text-align: left;
+  left: 10px;
+  position: absolute;
+}
+
+.items div .prices {
+  text-align: right;
+  right: 30px;
+  position: absolute;
+}
+
+
+.filter-click{
+  width: 100px;
+  height: 40px;
+  margin-left: 85%;
+  margin-top: -60px;
+  position: relative;
+  visibility: hidden;
+}
+
+.filter-click button{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.items div .price {
+  top: 78%;
+  right: 50px;
+  position: absolute;
+}
+
+.items div .final-price {
+  top: 82%;
+}
+
+.items div .initial-price {
+  top: 86%;
+  color: black;
+}
+.like,
+.buy {
+  top: 93%;
+  left: 5px;
+  width: 28px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+.filteration{
+  visibility: hidden;
+  top:0;
+  right: 20px;
+  position: absolute;
+}
+.like:hover,
+.buy:hover {
+  color: red;
+}
+.buy {
+  left: 75%;
+  position: absolute;
+  top: 92%;
+}
+.filter-heading{
+  font-size: xx-large;
+  color: rgb(255, 136, 0);
+}
+
+.state {
+  text-align: center;
+  bottom: 10px;
+  left: 45%;
+  position: fixed;
+  z-index: 10;
+  width: 150px;
+  font-size: large;
+  height: 30px;
+ 
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.state span {
+  color: rgb(255, 0, 85);
+  top: -4px;
+  position: absolute;
+}
+.noitems {
+  width: 50%;
+  height: 400px;
+  top: 0;
+  margin-left: 550px;
+  left: 0;
+  margin-top: 150x;
+  position: absolute;
+}
+.container .show{
+  width: 350;
+  min-height:500px;
+  display: flex;
+ 
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  .color{
+    margin-left: -70px;
+  }
+  z-index: 1;
+  
+}
+
+.container .blr{
+  top:0;
+  left:0;
+  position: absolute;
+}
+
+
+@media screen and (max-width:1200px)
+{
+  .products {
+   
+    grid-template-columns: 350px 350px 350px;
+    
+  }
+  .items {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+
+@media screen and (max-width:1080px)
+{
+  .products {
+   
+    grid-template-columns: 310px 310px 310px;
+  }
+  .items {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media screen and (max-width:960px)
+{
+  .products {
+    grid-template-columns: 360px 360px;
+  }
+  .items {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media screen and (max-width:820px)
+{
+  .products {
+    grid-template-columns: 360px 360px;
+  }
+  .container{
+    display: block;
+  }
+  .filter-click{
+    visibility: visible;
+  }
+  .filter{
+    display: none;
+  }
+  .forms{
+    min-width: 100px;
+  }
+
+}
+
+@media screen and (max-width:750px)
+{
+  .products {
+    grid-template-columns: 260px 260px;
+
+  }
+  .products div{
+    width: 250px;
+  }
+  .products div span ~ span sup{
+    left:35px;
+  }
+  .products > div:hover{
+    width: 255px;
+  }
+  .filter-click{
+    margin-left: 70%;
+  }
+
+}
+
+@media screen and (max-width:500px)
+{
+  .products {
+    grid-template-columns: 310px;
+
+  }
+  .products div{
+    width: 290px;
+  }
+  .products div span ~ span sup{
+    left:55px;
+  }
+  .products > div:hover{
+    width: 295px;
+  }
+  .Name{
+    font-size: xx-large;
+  }
+  
+}
+
+@media screen and (max-width:400px){
+  .filter-click{
+    margin-top: 1px;
+    margin-left: 55%;
+  }
+}
+
+@media screen and (max-width:320px)
+{
+  .products {
+    grid-template-columns: 300px;
+
+  }
+  .products div{
+    width: 290px;
+  }
+
+  .container .filter{
+    width: 280px;
+  }
+}
